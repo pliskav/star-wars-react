@@ -1,13 +1,77 @@
-body {
+@import url('https://fonts.googleapis.com/css?family=Poller+One&display=swap');
+
+html,
+body,
+#root,
+.app,
+.body,
+.main,
+.container,
+.main-container{
+  height: 100%;
+}
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+/*GENERAL*/
+
+.app {
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
 }
+.container{
+  flex: 1;
+  height: auto;
+}
+.footer {
+  width: 100%;
+  height: 5em;
+  clear: both;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  background-color: rgba(60, 69, 67, 0.6);
+  border-radius: 0 0 15px 15px;
+}
+body {
+  font-family: 'Poller One', cursive;
+  background-image: url('img/sky.jpg');
+  color: whitesmoke;
+  background-attachment: fixed;
+}
+
+.main-container{
+  float: left;
+  width: 55%;
+}
+
+@media (max-width: 1360px){
+  .app{
+    display: block;
+  }
+  .container{
+    flex: none;
+  }
+  .main-container{
+    float: none;
+    width: 90%;
+    height: auto;
+    margin: auto;
+  }
+  .footer{
+    flex-shrink: unset;
+  }
+}
+
+
+
+
+
+
+
+

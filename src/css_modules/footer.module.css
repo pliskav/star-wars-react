@@ -1,0 +1,19 @@
+.footer_button {
+  border: 2px solid white;
+  border-radius: 5px;
+  width: 9em;
+  height: 2em;
+  background-color: darkred;
+}
+
+.footer_button > p {
+  font-size: 0.8em;
+  text-align: center;
+  padding: 0.5em;
+}
+
+.button_bold {
+  font-size: 1.2em;
+  color: #e3ab00;
+  font-variant: small-caps;
+}

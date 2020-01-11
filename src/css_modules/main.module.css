@@ -1,0 +1,52 @@
+.home{
+  width: 95%;
+}
+.mainphoto{
+  margin: 1em;
+  float: left;
+  width: 350px;
+  height: 270px;
+
+}
+.mainphoto img{
+  width: 350px;
+  height: 270px;
+  border: #e3ab00 2px solid;
+  border-radius: 25px;
+}
+.maintext{
+  margin: 2em;
+  float: none;
+  width: 100%;
+}
+.farGalaxy {
+  font-size: 1.5em;
+  letter-spacing: 0.2em;
+  text-align: justify;
+  line-height: 1.5;
+}
+
+@media (max-width: 720px){
+  .mainphoto{
+    float: none;
+    margin: 1em auto;
+  }
+  .maintext{
+    margin: auto;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 450px){
+  .mainphoto{
+    float: none;
+    margin: 1em auto;
+  }
+  .maintext{
+    margin: auto;
+  }
+  .farGalaxy {
+    font-size: 1.2em;
+    letter-spacing: 0.1em;
+    line-height: 1.3;
+  }
+}

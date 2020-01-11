@@ -1,0 +1,103 @@
+.films{
+  width: 90%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.info_container{
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 1em;
+}
+.film_info{
+  position: relative;
+  z-index: -1;
+  width: 100%;
+}
+.film_content{
+  margin: 1em;
+}
+.film_title{
+  width: 100%;
+  text-transform: uppercase;
+  font-size: 1.1em;
+  font-weight: bold;
+  padding: 1em;
+  background-color: #e3ab00;
+  border: darkred 2px solid;
+  border-radius: 25px;
+  text-align: center;
+  color: darkred;
+  cursor: pointer;
+}
+.film_director, .film_date{
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.5em;
+  padding: 0.5em;
+}
+.film_crawl{
+  width: 100%;
+  color: whitesmoke;
+  line-height: 1.2em;
+  text-align: justify;
+  text-justify: inter-character;
+  text-indent: 10px;
+  padding: 1em;
+  background-color: #000615;
+  border: whitesmoke 2px solid;
+  border-radius: 25px;
+}
+
+/*CLOSE BUTTON*/
+.close_button{
+  height: 50px;
+  position: absolute;
+  right: -35px;
+  left: auto;
+  top: -10px;
+}
+.x {
+  position: relative;
+  width: 23px;
+  height: 23px;
+  border: 2px solid #eef5df;
+  background-color: #e3ab00;
+  border-radius: 50%;
+}
+.x::before, .x::after {
+  position: absolute;
+  top: 10px;
+  left: 5px;
+  width: 13px;
+  height: 3px;
+  content: "";
+  background-color: darkred;
+}
+.x::before {
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.x::after {
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.x:hover { cursor: pointer; }
+.x:hover::before, .x:hover::after { display: block; }
+
+@media (min-width: 300px) and (max-width: 450px){
+  .films{
+    flex-direction: column;
+  }
+  .info_container{
+    width: 90%;
+    margin: auto;
+  }
+  .film_director, .film_date{
+    padding: 0.2em;
+  }
+}

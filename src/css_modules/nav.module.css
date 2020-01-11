@@ -1,0 +1,56 @@
+.menu_container{
+  position: fixed;
+  top: 0;
+}
+.nav{
+  position: fixed;
+  top: 15px;
+}
+.hide{
+  left: -300px;
+}
+.show{
+  left: 0px;
+}
+ul {
+  list-style-type: none;
+}
+li{
+  display: inline;
+  border: 1px solid #e3ab00;
+  border-radius: 4px;
+  margin: 0.5em;
+  padding: 0.2em 1.5em;
+  background-color: rgba(204, 3, 35, 0.8);
+  color: white;
+}
+.nav li a:link, a:visited, a:hover{
+  color: whitesmoke;
+  text-decoration: none;
+}
+.nav li a.activelink{
+  color: yellow;
+  font-weight: bold;
+}
+.menu_button{
+  color: #e3ab00;
+  font-size: 3em;
+  cursor: pointer;
+  display: none;
+}
+
+@media (max-width: 720px){
+  .nav{
+    top: 35px;
+    z-index: 999;
+  }
+  ul{
+    left: -300px;
+  }
+  li{
+    display: flex;
+  }
+  .menu_button{
+    display: block;
+  }
+}

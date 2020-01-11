@@ -1,0 +1,14 @@
+.error_wrapper{
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  margin-top: 5em;
+}
+.error_wrapper h1{
+  color: #e3ab00;
+  font-size: 5em;
+}
+.error_wrapper p{
+  color: whitesmoke;
+  font-size: 2em;
+}
